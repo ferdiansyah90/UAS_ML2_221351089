@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/ic_bg">
+
+    <LinearLayout
+        android:id="@+id/about_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Storylane -->
+        <TextView
+            android:id="@+id/storylane_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Storylane Aplikasi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/storylane_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GOLD PRO adalah aplikasi prediksi harga emas berbasis machine learning yang dirancang untuk membantu pengguna memahami dan memperkirakan pergerakan harga emas. Aplikasi ini dilahirkan dari kebutuhan untuk memberikan akses prediksi harga secara cepat, mudah, dan berbasis data historis secara langsung dari perangkat Android."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/white"
+            android:justificationMode="inter_word"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Cara Kerja -->
+        <TextView
+            android:id="@+id/howitworks_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara Kerja Aplikasi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/howitworks_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ada beberapa menu pilihan yang bisa dipilih pada aplikasi ini seperti :"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/white"
+            android:justificationMode="inter_word" />
+
+        <TextView
+            android:id="@+id/howitworks_description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1. Beranda – Menampilkan logo dan penjelasan singkat mengenai emas.\n\n2. Tentang Aplikasi – Menjelaskan latar belakang dan cara kerja GOLD PRO.\n\n3. Dataset – Menampilkan informasi dataset historis yang digunakan untuk pelatihan model.\n\n4. Fitur – Menjelaskan fitur-fitur (variabel) yang digunakan dalam prediksi harga emas.\n\n5. Model – Menampilkan deskripsi model LSTM dan proses pelatihan.\n\n6. Simulasi – Fitur utama untuk melakukan prediksi harga emas berdasarkan input yang dimasukkan pengguna."
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="@android:color/white"
+            android:justificationMode="inter_word" />
+
+    </LinearLayout>
+</ScrollView>

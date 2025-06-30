@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/ic_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/model_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arsitektur Model"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/model_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:lineSpacingExtra="6dp"
+            android:justificationMode="inter_word"
+            android:textAlignment="viewStart"
+            android:text="Model prediksi harga emas ini menggunakan pendekatan Recurrent Neural Network (RNN), khususnya Long Short-Term Memory (LSTM).\n\nRNN sangat cocok untuk data deret waktu karena dapat mengingat pola historis. Arsitektur model terdiri dari dua lapisan LSTM berturut-turut yang diikuti oleh lapisan Dense. Ini memungkinkan model memahami fluktuasi harga dari fitur-fitur input seperti harga emas, indeks GDX, dan harga SF."
+            android:layout_marginBottom="12dp" />
+
+        <!-- Judul2 -->
+        <TextView
+            android:id="@+id/model_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Model Mechine Learning"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Sub Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Preparation"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Gambar dan Penjelasan 1 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preparation1"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal dikonversi ke format datetime, kemudian dipecah menjadi kolom Tahun dan Bulan sebagai fitur input yang relevan."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gambar dan Penjelasan 2 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preparation2"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fitur-fitur penting seperti harga emas, indeks GDX, dan SF dipilih untuk digunakan dalam pelatihan model."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gambar dan Penjelasan 3 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preparation3"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data yang kosong dihapus, lalu dipisahkan antara fitur (X) dan target (y) yaitu harga penutupan."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gambar dan Penjelasan 4 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preparation4"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fitur dinormalisasi menggunakan MinMaxScaler untuk meningkatkan kinerja model."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gambar dan Penjelasan 5 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preparation5"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data dibagi menjadi data latih dan uji, kemudian diubah menjadi bentuk 3D sesuai kebutuhan LSTM."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Sub Judul -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Modeling"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Gambar dan Penjelasan 6 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/modeling1"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model terdiri dari 2 lapisan LSTM dan 2 lapisan Dense. LSTM digunakan untuk menangkap pola waktu dari data historis."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gambar dan Penjelasan 7 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/modeling2"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model dikompilasi dengan optimizer Adam dan loss MSE, serta menggunakan MAE sebagai metrik performa."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gambar dan Penjelasan 8 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/modeling3"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ringkasan arsitektur model ditampilkan, termasuk jumlah parameter dan output tiap layer."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Gambar dan Penjelasan 9 -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/modeling4"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model dilatih selama 50 epoch dengan batch size 32 dan validasi menggunakan data uji."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Judul3 -->
+        <TextView
+            android:id="@+id/accuracy_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akurasi Model"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Gambar Prediksi -->
+        <ImageView
+            android:id="@+id/image_eval_predict"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/akurasi1"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Model digunakan untuk memprediksi harga emas berdasarkan data uji. Fungsi predict menghasilkan array hasil prediksi, lalu diratakan menggunakan ravel() agar bisa dibandingkan dengan data asli."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:textAlignment="viewStart"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Gambar Perhitungan MAE, MSE, R2 -->
+        <ImageView
+            android:id="@+id/image_eval_mae_mse_r2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/akurasi2"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mengukur performa model dengan tiga metrik evaluasi:\n• MAE (Mean Absolute Error): Rata-rata selisih absolut antara nilai aktual dan prediksi.\n• MSE (Mean Squared Error): Rata-rata kuadrat dari selisih prediksi.\n• R² Score: Presentase akurasi model menjelaskan variasi data."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:textAlignment="viewStart"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Gambar Output Akhir Evaluasi -->
+        <ImageView
+            android:id="@+id/image_eval_output"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/output"
+            android:adjustViewBounds="true"
+            android:layout_marginBottom="4dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Output menunjukkan bahwa model memiliki MAE sebesar 1.33, MSE sebesar 2.63, dan R² Score sebesar 99.16%. Hal ini menunjukkan bahwa model sangat akurat dalam memprediksi harga emas."
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="6dp"
+            android:textAlignment="viewStart"
+            android:layout_marginBottom="24dp" />
+
+    </LinearLayout>
+</ScrollView>

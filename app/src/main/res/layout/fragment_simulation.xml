@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/ic_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Judul -->
+        <TextView
+            android:id="@+id/dataset_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lakukan Simulasi"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white" />
+
+        <!-- Input Tahun dan Bulan -->
+        <EditText
+            android:id="@+id/inputYear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Tahun (misal: 2025)"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/inputMonth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Bulan (misal: 10)"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Daftar Input Fitur -->
+        <EditText
+            android:id="@+id/inputAdjClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Adj Close (misal: 1950.0)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="High (misal: 1965.0)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Low (misal: 1940.0)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="Open (misal: 1955.0)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputGdxLow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="GDX Low (misal: 32.5)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputGdxClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="GDX Close (misal: 33.1)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputGdxHigh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="GDX High (misal: 33.5)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputGdxAdjClose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="GDX Adj Close (misal: 33.0)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputGdxOpen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="GDX Open (misal: 32.9)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp" />
+
+        <EditText
+            android:id="@+id/inputSfPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="40dp"
+            android:hint="SF Price (misal: 1952.4)"
+            android:inputType="numberDecimal"
+            android:textColor="@color/white"
+            android:textColorHint="#777777"
+            android:background="#222"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Tombol Prediksi -->
+        <Button
+            android:id="@+id/buttonPredict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Prediksi"
+            android:layout_marginTop="12dp"
+            android:paddingHorizontal="32dp"
+            android:layout_gravity="center"
+            android:backgroundTint="#222"/>
+
+        <!-- Hasil Prediksi -->
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</ScrollView>

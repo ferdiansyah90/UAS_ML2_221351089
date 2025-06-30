@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:background="@drawable/ic_bg">
+
+    <LinearLayout
+        android:id="@+id/homeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Logo Aplikasi -->
+        <ImageView
+            android:id="@+id/logoImage"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_logo"
+            android:contentDescription="Logo Aplikasi" />
+
+        <!-- Deskripsi tentang Emas -->
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emas adalah logam mulia yang bernilai tinggi dan telah digunakan selama ribuan tahun sebagai alat tukar, perhiasan, dan investasi. Nilainya sangat dipengaruhi oleh kondisi ekonomi global, inflasi, nilai tukar mata uang, serta permintaan dan penawaran di pasar dunia.\n\nAplikasi GOLD PRO membantu Anda memprediksi harga emas berdasarkan data historis menggunakan teknologi machine learning, sehingga Anda dapat membuat keputusan investasi yang lebih tepat."
+            android:textSize="16sp"
+            android:lineSpacingExtra="8dp"
+            android:textColor="@android:color/white"
+            android:gravity="start"
+            android:justificationMode="inter_word"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="24dp" />
+    </LinearLayout>
+</ScrollView>
